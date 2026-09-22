@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Cocktail Finder</h1>
+<!-- Search Section -->
+<div class="search-section">
+    <input type="text" id="searchInput"placeholder="Search drink...">
+    <button onclick="searchDrink()">Search</button>
+</div>
+<!-- Main Section -->
+<div class="main-container">
+    <!-- Left Side -->
+    <div class="drink-section">
+        <h2>Drinks</h2>
+        <div id="drinkContainer" class="drink-container">
+        </div>
+    </div>
+    <!-- Right Side -->
+    <div class="group-section">
+        <h2>My Group</h2>
+        <h3>Group Count:
+            <span id="groupCount">0</span>
+        </h3>
+        <div id="groupContainer">
+            <p>No drinks added yet.</p>
+        </div>
+    </div>
+</div>
+    <!-- Details Modal -->
+<div id="detailsModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()"> &times;</span>
+        <div id="modalBody">
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
